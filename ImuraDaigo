@@ -1,0 +1,22 @@
+for i in range(1, 11):
+    if i % 15 == 0:
+        print("Fizz Buzz!")
+    elif i % 3 == 0:
+        print("Fizz!")
+    elif i % 5 == 0:
+        print("Buzz!")
+    else:
+        print(i)
+        
+        
+fileobj = open("input.txt")
+text = fileobj.read()
+fileobj.close()
+text1=text[120:1200]
+
+text2=text1.replace('\n','')
+text2=text2.replace('\\n','')
+num=text2[-31:-2]
+text3=text2[0:-32]
+print(text3)
+num        
